@@ -4,13 +4,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+           @if($photos->count())
 
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
+           @else
+                <h3 align="center">You aren't following anyone yet.</h3>
+           @endif
         </div>
     </div>
 </div>

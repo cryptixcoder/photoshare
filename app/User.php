@@ -47,4 +47,17 @@ class User extends Authenticatable
     public function unfollow(User $user){
         return $this->following()->detach($user->id);
     }
+
+    public function avatarUrl(){
+        return "https://www.gravatar.com/avatar/".md5($this->email);
+    }
+
+    public function isProfile(User $user){
+        if($this->id == $user->id){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }

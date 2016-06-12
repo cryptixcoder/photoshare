@@ -1,0 +1,7 @@
+body{
+	background-color: #fafafa;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	background: white;
+}
